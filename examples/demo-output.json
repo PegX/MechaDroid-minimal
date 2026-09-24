@@ -1,0 +1,42 @@
+{
+  "project": "MechaDroid",
+  "scope": "synthetic preprocessing only; no APK loading or malware verdict",
+  "nodes": [
+    {
+      "id": 0,
+      "class_name": "Ldemo/Main;",
+      "method_name": "start",
+      "descriptor": "()V",
+      "class_simple_name": "Main",
+      "class_package": "demo"
+    },
+    {
+      "id": 1,
+      "class_name": "Ldemo/Store;",
+      "method_name": "save",
+      "descriptor": "(Ljava/lang/String;)V",
+      "class_simple_name": "Store",
+      "class_package": "demo"
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "kind": "synthetic_call"
+    }
+  ],
+  "instruction": {
+    "opcode": "invoke-virtual",
+    "tokens": [
+      "invoke-virtual",
+      "reg",
+      "reg",
+      "class_store",
+      "api_save",
+      "argc_1",
+      "return_void",
+      "param_string"
+    ]
+  }
+}
